@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Landing Page</title>
+        <style>
+          body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 20px;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.cta-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+Styling the Hero Section:
+
+.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #28a745;
+    padding: 15px 30px;
+    font-size: 18px;
+}
+Styling the Features Section (Using CSS Grid):
+
+.features {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 40px;
+    text-align: center;
+}
+
+.feature-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+}
+Styling the Testimonials Section (Using Flexbox):
+
+.testimonials {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.testimonial {
+    width: 45%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+Footer Section Styling:
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="logo">Logo</div>
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="cta-btn">Get Started</button>
+        </header>
+        
+        <section class="hero">
+            <h1>Welcome to Our Service</h1>
+            <p>Our service helps you grow your business effortlessly.</p>
+            <button class="cta-btn">Learn More</button>
+        </section>
+
+        <section id="features" class="features">
+            <h2>Features</h2>
+            <div class="feature-item">Feature 1</div>
+            <div class="feature-item">Feature 2</div>
+            <div class="feature-item">Feature 3</div>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial">
+                <p>"This service is amazing!"</p>
+                <cite>- John Doe</cite>
+            </div>
+            <div class="testimonial">
+                <p>"It has helped me improve my business." </p>
+                <cite>- Jane Smith</cite>
+            </div>
+        </section>
+
+        <footer id="contact">
+            <p>Contact us at: example@email.com</p>
+            <div class="social-links">
+                <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">LinkedIn</a>
+            </div>
+        </footer>
+    </body>
+</html>
